@@ -1,0 +1,28 @@
+@use '_custom' as *;
+
+#mainSellingPoint{
+    text-align: center;
+    background-color: $primary;
+    border-top: 3px solid $purple;
+    border-bottom: 3px solid $purple;
+    color: white;
+
+    h1{
+        font-size: 4rem;
+    }
+
+    button{
+        width: 55%;
+        color: black;
+        background-color: $secondary;
+        border: 3px solid $purple;
+        border-radius: 15px;
+        font-weight: 500;
+
+        &:hover{
+            background-color: $orange;
+            border-color: $purple;
+            color: black;
+        }
+    }
+}

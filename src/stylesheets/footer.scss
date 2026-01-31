@@ -1,0 +1,30 @@
+@use '_custom' as *;
+
+footer{
+    background-color: $purple;
+    color: white;
+
+    a{
+        color: white;
+        &:hover{
+            color: $pink;
+        }
+    }
+
+    .links{
+        border-top: 2px solid $pink;
+        border-bottom: 2px solid $pink;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+    
+    .logo{
+        width: 100%;
+
+        @include media-breakpoint-up (lg){
+            width: 50%;
+        }
+    }
+}

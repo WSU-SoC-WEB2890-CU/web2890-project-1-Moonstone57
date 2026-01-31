@@ -1,0 +1,56 @@
+@use '_custom' as *;
+
+#recentPurchases{
+    background-color: rgba($primary, 0.9);
+    border-top: 3px solid $purple;
+    border-bottom: 3px solid $purple;
+    color: white;
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .card{
+        min-height: 100%;
+        color: black;
+        height: 100%;
+
+        h5{
+            color: $primary;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        .btn{
+            width: 100%;
+            color: black;
+            background-color: $secondary;
+            border: 3px solid $purple;
+            border-radius: 15px;
+            font-weight: 500;
+            
+            &:hover{
+            background-color: $orange;
+            border-color: $purple;
+            color: black;
+            }
+        }
+
+        img{
+            width: 80%;
+            object-fit: cover;
+            height: 15rem;
+            border: 2px solid $secondary;
+            border-radius: 15px;
+            margin: 0 1rem;
+            
+            @include media-breakpoint-up (lg){
+                width: 90%;
+            }
+        }
+    }
+}

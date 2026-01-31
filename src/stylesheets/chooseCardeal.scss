@@ -1,0 +1,31 @@
+@use '_custom' as *;
+
+#chooseCardeal{
+    color: black;
+    
+    .row{
+        height: 100%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+    p{
+        font-size: 1.25rem;
+    }
+
+    .col p{
+        border: 4px solid $primary;
+        border-radius: 15px;
+        height: 100%;
+        background-color: rgba($orange, 0.7);
+        margin: 0;
+        font-weight: 500;
+    }  
+}

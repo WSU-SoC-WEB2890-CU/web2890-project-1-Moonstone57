@@ -1,0 +1,90 @@
+@use '_custom' as *;
+
+#testimonials{
+    color: black;
+
+    .titleRow{
+        text-align: center;
+
+        P{
+            font-size: 1.25rem;
+        }
+    }
+
+    img{
+
+        border-radius: 5rem;
+        border: 3px solid $primary;
+        width: 80%;
+        
+        @include media-breakpoint-up (lg){
+            width: 50%; 
+        }
+    }
+
+    p{
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .testimonial-name{
+        font-weight: 500;
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        background-color: $primary;
+        width: 12%;
+        border: 3px solid $purple;
+        border-radius: 15px;
+        opacity: 10;
+        height: 60%;
+        &:hover{
+            background-color: $orange;
+            border-color: $purple;
+            color: black;
+             text-decoration-line: underline;
+        }
+
+        @include media-breakpoint-up (lg){
+            height: 80%;
+        }
+    }
+
+    .btn{
+        width: 65%;
+        color: black;
+        background-color: $secondary;
+        border: 3px solid $purple;
+        border-radius: 15px;
+        font-weight: 500;
+
+        &:hover{
+            background-color: $orange;
+            border-color: $purple;
+            color: black;
+        }
+
+        @include media-breakpoint-up (lg){
+            font-size: 1rem;
+            line-height: 1rem; 
+        }
+    }
+
+    .carousel-item .container{
+        background-color: $pink;
+        border-radius: 15px;
+        border: 3px solid $primary;
+        width: 70%;
+        height: 40rem;
+        text-align: center;
+
+        @include media-breakpoint-up (md){
+            height: 50rem;
+        }
+
+        @include media-breakpoint-up (lg){
+            height: 28rem;
+        }
+    }
+    
+}
