@@ -1,0 +1,39 @@
+@use '_custom' as *;
+
+#howItWorks{
+    margin: 0 1rem;
+
+    .stepNumber{
+        background-color: $primary;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 1.25rem;
+        font-weight: 600;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.25rem;
+        color: black;
+        font-weight: 500;
+    }
+
+    #howItWorksTitle{
+        background-color: white;
+        border-style: none;
+    }
+
+    .row{
+        background-color: $pink;
+        border-radius: 25px;
+        border: 3px solid $primary;
+    }
+}
+

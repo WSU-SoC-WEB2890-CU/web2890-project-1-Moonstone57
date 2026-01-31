@@ -1,0 +1,26 @@
+@use '_custom' as *;
+
+#faq{
+    h1{
+        text-align: center;
+    }
+
+    h2 button{
+        font-weight: 600;
+    }
+
+    .accordion-item{
+        border: 2px solid $primary;
+    }
+
+    .accordion-header{
+         background-color: rgba($orange, 0.7);
+         border: none;
+    }
+
+    .accordion-button{
+        background-color: rgba($orange, 0.7);
+        border: 2px solid $primary;
+        box-shadow: none;
+    }
+}

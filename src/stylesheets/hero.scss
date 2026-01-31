@@ -1,0 +1,109 @@
+@use '_custom' as *;
+
+.hero{
+    position: relative;
+    height: 100vh;
+    margin-top: 4rem;
+
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: brightness(1.25);
+        object-fit: cover;
+    }
+
+    @include media-breakpoint-up (lg){
+        margin-top: 5rem;
+    }
+
+    .btn{
+        width: 65%;
+        color: black;
+        background-color: $secondary;
+        border: 3px solid $purple;
+        border-radius: 15px;
+        max-height: 8vh;
+        font-weight: 500;
+
+        &:hover{
+            background-color: $orange;
+            border-color: $purple;
+            color: black;
+        }
+
+        @include media-breakpoint-up (lg){
+            font-size: 2rem;
+            line-height: 2rem; 
+        }
+    }
+
+    label{
+        @include media-breakpoint-up (lg){
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+        }
+    }
+
+    .form-control{
+        color: white;
+
+        height: 100%;
+        border-radius: 15px;
+        font-size: 1rem;
+        &::placeholder{
+            font-size: 1rem;
+            color: black;
+        }
+        
+        @include media-breakpoint-up (lg){
+            font-size: 1.5rem;
+            &::placeholder{
+                font-size: 1.5rem;
+                line-height: 1.5rem; 
+            }
+        }
+    }
+
+    .hero-form{
+        flex: 1;
+        color: black;
+    }
+}
+
+.hero-text{
+    h1.hero-text-main{
+        font-size: 3rem;
+    }
+    h2.hero-text-sub{
+        font-size: 1rem;
+    }
+    
+    @include media-breakpoint-up (md){
+        h1.hero-text-main{
+            font-size: 4rem;
+        }
+        h2.hero-text-sub{
+            font-size: 2rem;
+        }
+    }
+
+    @include media-breakpoint-up (lg){
+        h1.hero-text-main{
+            font-size: 5rem;
+        }
+        h2.hero-text-sub{
+            font-size: 2.5rem;
+        }
+    }
+
+    @include media-breakpoint-up (xl){
+        h1.hero-text-main{
+            font-size: 6rem;
+        }
+        h2.hero-text-sub{
+            font-size: 2.5rem;
+        }
+    }
+    
+}
